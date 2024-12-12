@@ -14,10 +14,12 @@ def f(x):
         return False
     s = ''.join(x)
     if s.count('ЕЙ') + s.count('ЙЕ') == 0:
-        return 1
+        return True
 n = product(l, repeat=6)
-fl = filter(f,n)
-fl = list(fl)
+fl = []
+for x in n:
+    if f(x)==True:
+        fl.append(x)
 n = len(fl)
 print(n)
 ```
