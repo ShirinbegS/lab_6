@@ -6,7 +6,7 @@ def f(x):
     return True
 # Нахождение и вывод простых чисел с их порядковыми номерами
 count = 0
-for num in range(245690, 245756 + 1):
+for num in range(245690, 245756):
     if f(num):
         count += 1
         print(count, num)
